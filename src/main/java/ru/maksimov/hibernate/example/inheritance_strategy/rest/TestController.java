@@ -21,13 +21,13 @@ public class TestController {
 
     @GetMapping
     public String test() {
-//        BankAccount bankAccount = new BankAccount();
-//        bankAccount.setOwner("trololo");
-//        bankAccount.setAccount("1234257289472389");
-//        operationService.execute(bankAccount);
-        OtherDetails entity = new OtherDetails();
-        entity.setOwner("trololo");
-        operationService.execute2(entity);
+        BankAccount bankAccount = new BankAccount();
+        bankAccount.setOwner("trololo");
+        bankAccount.setAccount("1234257289472389");
+        operationService.execute(bankAccount);
+//        OtherDetails entity = new OtherDetails();
+//        entity.setOwner("trololo");
+//        operationService.execute2(entity);
         return "ok";
     }
 

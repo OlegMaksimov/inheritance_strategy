@@ -11,6 +11,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn()
 @Table(name = "billing_details")
 public abstract class BillingDetails {
     @Id
