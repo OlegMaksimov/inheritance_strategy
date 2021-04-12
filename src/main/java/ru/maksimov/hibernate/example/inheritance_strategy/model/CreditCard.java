@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import ru.maksimov.hibernate.example.inheritance_strategy.model.enum_type.ChannelType;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;

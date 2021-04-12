@@ -34,6 +34,8 @@ public class TestController {
     @GetMapping("/get")
     @ResponseBody
     public ResponseEntity<BillingDetails> getEntity(@RequestParam Long id) {
-        return new ResponseEntity<> (operationService.getEntity(id), HttpStatus.OK);
+        BillingDetails details = operationService.getEntity(id);
+        System.out.println(details);
+        return new ResponseEntity<> (details, HttpStatus.OK);
     }
 }
